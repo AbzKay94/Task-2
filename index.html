@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+
+<script>
+    // Some string methods
+    let str = "Hello, World!";
+    document.write("Original String: " + str + "<br>");
+    document.write("Length: " + str.length + "<br>");
+    document.write("Uppercase: " + str.toUpperCase() + "<br>");
+    document.write("Index of 'World': " + str.indexOf("World") + "<br>");
+    document.write("Sliced: " + str.slice(0, 5) + "<br>");
+    document.write("Replaced: " + str.replace("World", "Universe") + "<br>");
+    document.write("<hr>"); 
+
+    // The below are number methods as requested
+    let num = 42.75;
+    document.write("Original Number: " + num + "<br>");
+    document.write("Fixed to 2 decimals: " + num.toFixed(2) + "<br>");
+    document.write("To String: " + num.toString() + "<br>");
+    document.write("Parsed Int: " + parseInt("12345") + "<br>");
+    document.write("Parsed Float: " + parseFloat("3.14") + "<br>");
+    document.write("<hr>");
+
+    // Array methods below
+    let fruits = ["apple", "banana", "cherry"];
+    document.write("Original Array: " + fruits + "<br>");
+    document.write("Length: " + fruits.length + "<br>");
+    document.write("Joined: " + fruits.join(", ") + "<br>");
+    document.write("Popped: " + fruits.pop() + "<br>");
+    fruits.push("orange");
+    document.write("Pushed: " + fruits + "<br>");
+    let combined = fruits.concat(["grape", "kiwi"]);
+    document.write("Concatenated: " + combined + "<br>");
+    document.write("<hr>"); 
+
+    // Date methods
+    let today = new Date();
+    document.write("Current Year: " + today.getFullYear() + "<br>");
+    document.write("Current Month: " + (today.getMonth() + 1) + "<br>");
+    document.write("Current Date: " + today.getDate() + "<br>");
+    document.write("Current Hours: " + today.getHours() + "<br>");
+    document.write("Current Minutes: " + today.getMinutes() + "<br>");
+    document.write("<hr>"); 
+
+    // Function methods
+    function greet(name) {
+        document.write("Hello, " + name + "!" + "<br>");
+    }
+    
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    greet("Abdullah");
+    document.write("Result of Multiplication: " + multiply(5, 3) + "<br>");
+</script>
+
+</body>
+</html>
+
+
